@@ -81,41 +81,7 @@ IJulia.notebook()
 </details>
 
 <details>
-   <summary> <h2>Preparing your KITBlue account (click to unfold)</h2> </summary>
+   <summary> <h2>Preparing your KIT account (click to unfold)</h2> </summary>
 
-### Login
-
-Anyone with a TU KIT NetID should be able to SSH to KITBlue. You can use a terminal or Visual Studio Code to login to the cluster. If necessary, more details are available in the KITBlue documentation [here](https://doc.dhpc.tudelft.nl/delftblue/Remote-access-to-KITBlue/#ssh).
-
-##### Terminal
-
-Open a terminal and login to the cluster with the following command (where your replace `<netid>` by your NetID).
-
-```
-ssh <netid>@login.delftblue.tudelft.nl
-```
-
-##### VS Code
-
-1. Open Visual Studio Code.
-2. Press `CTRL + SHIFT + P` or `CMD + SHIFT + P` (opens a popup menu) and type and select `Remote-SSH: Connect to Host...`.
-3. When asked for it, input `<netid>login.delftblue.tudelft.nl` for the hostname (with `<netid>` replaced by your NetID) and press `Enter`.
-
-After some time, you should have VS Code running on the cluster. You can get an integrated terminal by pressing `CTRL + SHIFT + P` or `CMD + SHIFT + P` and running `Terminal: Create New Terminal`.
-
-### Setting things up
-
-Execute the following command on the cluster
-
-```
-sh /projects/julia/setup_account.sh
-```
-
-You only have to do this once. If you're curious, the script will
-
-* put a single line at the end of your `~/.bashrc`,
-* clone the workshop materials to `/scratch/<netid>/JuliaKIT26`.
-
-(Easy to undo after the course, if you like to.)
-
+TBD
 </details>
