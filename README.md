@@ -13,7 +13,7 @@ A four-day workshop that will take place at [KIT](https://www.kit.edu/) in March
 <details>
    <summary> <h2>Preparing your laptop (click to unfold)</h2> </summary>
 
-### Install Julia 1.10
+### Install Julia 1.12
 
 The simplest way to install Julia 1.12 is via [juliaup](https://github.com/JuliaLang/juliaup). Run one of the following in a terminal.
 
