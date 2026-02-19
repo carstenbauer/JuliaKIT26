@@ -1,6 +1,6 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.12.4"
+julia_version = "1.12.5"
 manifest_format = "2.0"
 project_hash = "c75a711789e5e5f0854903d4d12225867b0cd9eb"
 
@@ -18,10 +18,10 @@ weakdeps = ["ChainRulesCore", "ConstructionBase", "EnzymeCore"]
 
 [[deps.About]]
 deps = ["InteractiveUtils", "JuliaSyntaxHighlighting", "PrecompileTools", "StyledStrings"]
-git-tree-sha1 = "81132278b415ec274a2b2353df3eaa20845d1767"
+git-tree-sha1 = "b0dcdec6d6279635bb338e7c266ff629388180e0"
 pinned = true
 uuid = "69d22d85-9f48-4c46-bbbe-7ad8341ff72a"
-version = "1.0.3"
+version = "1.0.4"
 weakdeps = ["Pkg"]
 
     [deps.About.extensions]
