@@ -2,14 +2,14 @@
 
 # Making module / ml available
 # ------------------------------------------------------------
-export MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/apps/noarch/modulefiles:/apps/generic/modulefiles
-source /usr/share/lmod/lmod/init/profile
+export MODULEPATH=/opt/system/modulefiles:/opt/training/modulefiles:/opt/hlrs/non-spack/modulefiles:/opt/hlrs/spack/current/modulefiles
+export MODULEPATH="/shared/akad-julia/modules:$MODULEPATH"
+source /opt/system/lmod/lmod/init/profile
 # ------------------------------------------------------------
 
 # Load julia
-module use /projects/julia/modulefiles
-module load juliahpc
-module load nvhpc # for MPI/CUDA
+ml juliahpc
+# ml mpi/openmpi # for MPI
 
 # Pass on all arguments to julia
 exec julia "${@}"
