@@ -1,4 +1,4 @@
-isoncluster() = isdir("/projects/julia/modulefiles")
+isoncluster() = isdir("/pfs/work9/workspace/scratch/")
 if isoncluster()
     @show Base.get_preferences()
 end
