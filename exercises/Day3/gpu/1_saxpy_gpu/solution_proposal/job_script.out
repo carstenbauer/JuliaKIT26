@@ -1,23 +1,23 @@
 ┌─────────────┬──────────────┬─────────────────┬──────────────────┐
 │     Variant │ Runtime (ms) │ FLOPS (GFLOP/s) │ Bandwidth (GB/s) │
 ├─────────────┼──────────────┼─────────────────┼──────────────────┤
-│   Broadcast │      5.42276 │         198.007 │          1188.04 │
-│ CUDA kernel │      4.75028 │         226.038 │          1356.23 │
-│      CUBLAS │      4.97055 │         216.021 │          1296.13 │
+│   Broadcast │      4.95202 │         216.829 │          1300.97 │
+│ CUDA kernel │      4.78732 │         224.289 │          1345.73 │
+│      CUBLAS │      5.04361 │         212.891 │          1277.35 │
 └─────────────┴──────────────┴─────────────────┴──────────────────┘
 Theoretical Memory Bandwidth of NVIDIA A100: 1555 GB/s
 
 ============================= JOB FEEDBACK =============================
 
 NodeName=uc2n561
-Job ID: 3244766
+Job ID: 3245336
 Cluster: uc3
 User/Group: ka_rx8865/ka_scc
 State: COMPLETED (exit code 0)
 Nodes: 1
 Cores per node: 4
 CPU Utilized: 00:00:34
-CPU Efficiency: 18.48% of 00:03:04 core-walltime
-Job Wall-clock time: 00:00:46
-Memory Utilized: 1.29 GB
-Memory Efficiency: 12.91% of 10.00 GB (10.00 GB/node)
+CPU Efficiency: 17.35% of 00:03:16 core-walltime
+Job Wall-clock time: 00:00:49
+Memory Utilized: 1.54 GB
+Memory Efficiency: 15.37% of 10.00 GB (10.00 GB/node)

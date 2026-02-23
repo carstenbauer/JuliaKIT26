@@ -1,8 +1,19 @@
-Prologue: PBS assigned coreids = [1, 2, 3, 4].
-Prologue: Will use GPU 1 (9f6c344e-aafb-a6f0-93fd-6146659179de).
 CPU and GPU results match: true
-CPU (sequential):	804.45ms
-GPU (incl. transfer):	6.55ms
-GPU (w/o transfer):	292.36μs
-Job for ftrm@12564.cl7intern.service failed because the control process exited with error code.
-See "systemctl status ftrm@12564.cl7intern.service" and "journalctl -xe" for details.
+CPU (sequential):	224.0ms
+GPU (incl. transfer):	3.55ms
+GPU (w/o transfer):	394.67μs
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n561
+Job ID: 3245811
+Cluster: uc3
+User/Group: ka_rx8865/ka_scc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:39
+CPU Efficiency: 18.06% of 00:03:36 core-walltime
+Job Wall-clock time: 00:00:54
+Memory Utilized: 1.64 GB
+Memory Efficiency: 16.42% of 10.00 GB (10.00 GB/node)
