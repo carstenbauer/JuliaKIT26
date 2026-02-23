@@ -1,0 +1,14 @@
+CuDevice(2), out of: 8
+CuDevice(0), out of: 8
+CuDevice(3), out of: 8
+CuDevice(1), out of: 8
+nprocs = 4, dims = (2, 2)
+Time = 2.9070e-01 s, T_eff = 0.89 GB/s 
+
+CuDevice(2), out of: 8
+CuDevice(3), out of: 8
+CuDevice(1), out of: 8
+CuDevice(0), out of: 8
+nprocs = 4, dims = (2, 2)
+Time = 1.1784e+01 s, T_eff = 360.82 GB/s 
+
