@@ -57,7 +57,7 @@ We will use `mpiexecjl` during the course, which - after the installation above 
 export PATH=$HOME/.julia/bin:$PATH
 ```
 
-I don't have Windows, and don't know how to do it there, but you should readily find instructions on Google.
+If you're on Windows, please [ask Claude](https://claude.ai/new?q=how+to+add+%24HOME%2F.julia%2Fbin+to+the+PATH+environment+variable+on+windows%3F) oder [ask ChatGPT](https://chatgpt.com/?prompt=how+to+add+%60%24HOME%2F.julia%2Fbin%60+to+the+%60PATH%60+environment+variable+on+windows%3F).
 
 ### Install Visual Studio Code (+ extensions)
 
