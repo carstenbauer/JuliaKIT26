@@ -75,9 +75,9 @@ function axpy_scaling_table(; numthreads=1:nthreads(), kwargs...)
         # (pretty) printing
         println()
         pretty_table(membw_results;
-            header=[":serial", ":parallel"],
+            column_labels=[":serial", ":parallel"],
             row_labels=[":cores", ":sockets", ":numa"],
-            row_label_column_title="# Threads = $nt",
+            stubhead_label="# Threads = $nt",
             title="Memory Bandwidth (GB/s)")
         flush(stdout)
     end

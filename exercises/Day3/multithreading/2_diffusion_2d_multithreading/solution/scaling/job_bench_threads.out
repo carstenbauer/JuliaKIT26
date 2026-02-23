@@ -3,134 +3,149 @@
 #### Run 512
 -- ns=512, nt=100, SERIAL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 5.0240e-03 s, T_eff = 75.14 GB/s 
+Time = 4.9966e-02 s, T_eff = 7.55 GB/s 
 pinthreads(sockets)
-Time = 7.0028e-03 s, T_eff = 53.91 GB/s 
+Time = 3.4091e-02 s, T_eff = 11.07 GB/s 
 pinthreads(numa)
-Time = 6.9592e-03 s, T_eff = 54.24 GB/s 
+Time = 2.3849e-02 s, T_eff = 15.83 GB/s 
 
 -- ns=512, nt=100, SERIAL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 5.8520e-03 s, T_eff = 64.51 GB/s 
+Time = 8.6191e-03 s, T_eff = 43.80 GB/s 
 pinthreads(sockets)
-Time = 9.7270e-03 s, T_eff = 38.81 GB/s 
+Time = 9.9311e-03 s, T_eff = 38.01 GB/s 
 pinthreads(numa)
-Time = 9.7220e-03 s, T_eff = 38.83 GB/s 
+Time = 5.6801e-03 s, T_eff = 66.46 GB/s 
 
 -- ns=512, nt=100, PARALLEL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 3.6290e-03 s, T_eff = 104.02 GB/s 
+Time = 4.5617e-02 s, T_eff = 8.28 GB/s 
 pinthreads(sockets)
-Time = 6.3479e-03 s, T_eff = 59.47 GB/s 
+Time = 1.5327e-02 s, T_eff = 24.63 GB/s 
 pinthreads(numa)
-Time = 6.4421e-03 s, T_eff = 58.60 GB/s 
+Time = 3.4691e-02 s, T_eff = 10.88 GB/s 
 
 -- ns=512, nt=100, PARALLEL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 6.7060e-03 s, T_eff = 56.29 GB/s 
+Time = 7.6361e-03 s, T_eff = 49.43 GB/s 
 pinthreads(sockets)
-Time = 1.0075e-02 s, T_eff = 37.47 GB/s 
+Time = 5.6109e-03 s, T_eff = 67.28 GB/s 
 pinthreads(numa)
-Time = 9.9289e-03 s, T_eff = 38.02 GB/s 
+Time = 6.2201e-03 s, T_eff = 60.69 GB/s 
 
 
 #### Run 2048
 -- ns=2048, nt=100, SERIAL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 9.4393e-02 s, T_eff = 63.99 GB/s 
+Time = 1.1801e-01 s, T_eff = 51.18 GB/s 
 pinthreads(sockets)
-Time = 4.1363e-02 s, T_eff = 146.02 GB/s 
+Time = 7.9789e-02 s, T_eff = 75.70 GB/s 
 pinthreads(numa)
-Time = 4.1784e-02 s, T_eff = 144.55 GB/s 
+Time = 9.3198e-02 s, T_eff = 64.81 GB/s 
 
 -- ns=2048, nt=100, SERIAL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 6.4452e-02 s, T_eff = 93.71 GB/s 
+Time = 1.1920e-01 s, T_eff = 50.67 GB/s 
 pinthreads(sockets)
-Time = 7.7667e-02 s, T_eff = 77.77 GB/s 
+Time = 1.1746e-01 s, T_eff = 51.42 GB/s 
 pinthreads(numa)
-Time = 7.7115e-02 s, T_eff = 78.32 GB/s 
+Time = 1.1373e-01 s, T_eff = 53.10 GB/s 
 
 -- ns=2048, nt=100, PARALLEL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 6.5252e-02 s, T_eff = 92.56 GB/s 
+Time = 1.1566e-01 s, T_eff = 52.22 GB/s 
 pinthreads(sockets)
-Time = 3.7956e-02 s, T_eff = 159.13 GB/s 
+Time = 5.0702e-02 s, T_eff = 119.12 GB/s 
 pinthreads(numa)
-Time = 4.1043e-02 s, T_eff = 147.16 GB/s 
+Time = 6.0040e-02 s, T_eff = 100.60 GB/s 
 
 -- ns=2048, nt=100, PARALLEL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 6.4948e-02 s, T_eff = 92.99 GB/s 
+Time = 1.1445e-01 s, T_eff = 52.77 GB/s 
 pinthreads(sockets)
-Time = 7.4341e-02 s, T_eff = 81.24 GB/s 
+Time = 8.5115e-02 s, T_eff = 70.96 GB/s 
 pinthreads(numa)
-Time = 7.6414e-02 s, T_eff = 79.04 GB/s 
+Time = 8.0772e-02 s, T_eff = 74.78 GB/s 
 
 
 #### Run 6144
 -- ns=6144, nt=100, SERIAL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 8.4609e-01 s, T_eff = 64.25 GB/s 
+Time = 1.0077e+00 s, T_eff = 53.94 GB/s 
 pinthreads(sockets)
-Time = 5.4231e-01 s, T_eff = 100.23 GB/s 
+Time = 1.2552e+00 s, T_eff = 43.31 GB/s 
 pinthreads(numa)
-Time = 9.3833e-01 s, T_eff = 57.93 GB/s 
+Time = 8.5070e-01 s, T_eff = 63.90 GB/s 
 
 -- ns=6144, nt=100, SERIAL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 8.4244e-01 s, T_eff = 64.52 GB/s 
+Time = 1.0114e+00 s, T_eff = 53.74 GB/s 
 pinthreads(sockets)
-Time = 1.0076e+00 s, T_eff = 53.95 GB/s 
+Time = 1.3344e+00 s, T_eff = 40.74 GB/s 
 pinthreads(numa)
-Time = 1.0900e+00 s, T_eff = 49.87 GB/s 
+Time = 1.4510e+00 s, T_eff = 37.46 GB/s 
 
 -- ns=6144, nt=100, PARALLEL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 8.3980e-01 s, T_eff = 64.73 GB/s 
+Time = 1.0126e+00 s, T_eff = 53.68 GB/s 
 pinthreads(sockets)
-Time = 4.8583e-01 s, T_eff = 111.89 GB/s 
+Time = 6.2366e-01 s, T_eff = 87.16 GB/s 
 pinthreads(numa)
-Time = 4.8802e-01 s, T_eff = 111.39 GB/s 
+Time = 4.4384e-01 s, T_eff = 122.47 GB/s 
 
 -- ns=6144, nt=100, PARALLEL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 8.4944e-01 s, T_eff = 63.99 GB/s 
+Time = 1.0083e+00 s, T_eff = 53.91 GB/s 
 pinthreads(sockets)
-Time = 6.8101e-01 s, T_eff = 79.82 GB/s 
+Time = 8.3008e-01 s, T_eff = 65.49 GB/s 
 pinthreads(numa)
-Time = 7.0825e-01 s, T_eff = 76.75 GB/s 
+Time = 5.8898e-01 s, T_eff = 92.29 GB/s 
 
 
 #### Run 16384
 -- ns=16384, nt=100, SERIAL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 6.0828e+00 s, T_eff = 63.55 GB/s 
+Time = 6.8707e+00 s, T_eff = 56.26 GB/s 
 pinthreads(sockets)
-Time = 6.1607e+00 s, T_eff = 62.74 GB/s 
+Time = 5.6492e+00 s, T_eff = 68.43 GB/s 
 pinthreads(numa)
-Time = 5.7351e+00 s, T_eff = 67.40 GB/s 
+Time = 5.5680e+00 s, T_eff = 69.42 GB/s 
 
 -- ns=16384, nt=100, SERIAL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 6.0968e+00 s, T_eff = 63.40 GB/s 
+Time = 6.8134e+00 s, T_eff = 56.73 GB/s 
 pinthreads(sockets)
-Time = 7.7161e+00 s, T_eff = 50.10 GB/s 
+Time = 7.4158e+00 s, T_eff = 52.12 GB/s 
 pinthreads(numa)
-Time = 6.8726e+00 s, T_eff = 56.24 GB/s 
+Time = 6.7425e+00 s, T_eff = 57.33 GB/s 
 
 -- ns=16384, nt=100, PARALLEL initialization, STATIC scheduling
 pinthreads(cores)
-Time = 6.1148e+00 s, T_eff = 63.21 GB/s 
+Time = 7.3081e+00 s, T_eff = 52.89 GB/s 
 pinthreads(sockets)
-Time = 3.4476e+00 s, T_eff = 112.12 GB/s 
+Time = 4.4997e+00 s, T_eff = 85.90 GB/s 
 pinthreads(numa)
-Time = 3.4330e+00 s, T_eff = 112.60 GB/s 
+Time = 2.9970e+00 s, T_eff = 128.98 GB/s 
 
 -- ns=16384, nt=100, PARALLEL initialization, DYNAMIC scheduling
 pinthreads(cores)
-Time = 6.1533e+00 s, T_eff = 62.82 GB/s 
+Time = 7.3083e+00 s, T_eff = 52.89 GB/s 
 pinthreads(sockets)
-Time = 4.9583e+00 s, T_eff = 77.96 GB/s 
+Time = 6.0619e+00 s, T_eff = 63.77 GB/s 
 pinthreads(numa)
-Time = 5.3216e+00 s, T_eff = 72.64 GB/s 
+Time = 4.0878e+00 s, T_eff = 94.56 GB/s 
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n849
+Job ID: 3244532
+Cluster: uc3
+User/Group: ka_rx8865/ka_scc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 128
+CPU Utilized: 00:25:08
+CPU Efficiency: 6.44% of 06:30:24 core-walltime
+Job Wall-clock time: 00:03:03
+Memory Utilized: 8.50 GB
+Memory Efficiency: 3.40% of 250.00 GB (1.95 GB/core)

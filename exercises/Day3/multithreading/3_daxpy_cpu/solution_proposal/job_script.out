@@ -1,25 +1,40 @@
 
 AXPY with scheduler = :dynamic
 
-Memory Bandwidth (GB/s)
+        Memory Bandwidth (GB/s)
 ┌────────────────┬─────────┬───────────┐
-│ # Threads = 20 │ :serial │ :parallel │
+│ # Threads = 16 │ :serial │ :parallel │
 ├────────────────┼─────────┼───────────┤
-│         :cores │   97.89 │      97.8 │
-│       :sockets │   83.58 │     116.2 │
-│          :numa │   81.77 │    132.86 │
+│         :cores │   85.51 │     74.04 │
+│       :sockets │   61.32 │     99.31 │
+│          :numa │   81.86 │    157.53 │
 └────────────────┴─────────┴───────────┘
 
 
 AXPY with scheduler = :static
 
-Memory Bandwidth (GB/s)
+        Memory Bandwidth (GB/s)
 ┌────────────────┬─────────┬───────────┐
-│ # Threads = 20 │ :serial │ :parallel │
+│ # Threads = 16 │ :serial │ :parallel │
 ├────────────────┼─────────┼───────────┤
-│         :cores │   97.86 │     97.65 │
-│       :sockets │   98.57 │    181.34 │
-│          :numa │    95.1 │    183.51 │
+│         :cores │   85.92 │     74.01 │
+│       :sockets │   76.86 │    143.13 │
+│          :numa │   74.56 │    230.65 │
 └────────────────┴─────────┴───────────┘
 
-116.612799 seconds (2.79 M allocations: 281.456 GiB, 1.93% gc time, 3.29% compilation time)
+136.974939 seconds (6.13 M allocations: 377.579 GiB, 1.65% gc time, 2.89% compilation time: 39% of which was recompilation)
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n662
+Job ID: 3244640
+Cluster: uc3
+User/Group: ka_rx8865/ka_scc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 128
+CPU Utilized: 00:23:48
+CPU Efficiency: 6.76% of 05:52:00 core-walltime
+Job Wall-clock time: 00:02:45
+Memory Utilized: 59.79 GB
+Memory Efficiency: 23.92% of 250.00 GB (1.95 GB/core)

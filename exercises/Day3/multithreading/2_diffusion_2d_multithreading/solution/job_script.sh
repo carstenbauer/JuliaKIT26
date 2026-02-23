@@ -1,20 +1,16 @@
 #!/bin/bash
-#PBS -N diff2dthreads
-#PBS -l select=1:node_type=skl:mem=5gb:ncpus=10
-#PBS -l walltime=00:10:00
-#PBS -j oe
-#PBS -o job_script.out
-#PBS -q smp
+#SBATCH --job-name=diff2dthreads
+#SBATCH --nodes=1
+#SBATCH --mem=5G
+#SBATCH --cpus-per-task=10
+#SBATCH --threads-per-core=1
+#SBATCH --time=00:10:00
+#SBATCH --output=job_script.out
+#SBATCH --partition=cpu_il
 
-WORKDIR=$(pwd)
-if [[ -n "${PBS_O_WORKDIR}" ]]; then
-    # we're running as a cluster job
-    # change to the directory that the job was submitted from ...
-    WORKDIR=$PBS_O_WORKDIR
-    # ... and load the module(s)
-    ml juliahpc
+if [[ -n "${SLURM_JOB_ID}" ]]; then
+    module load juliahpc
 fi
-cd $WORKDIR
 
 for i in 256 512 1028
 do
