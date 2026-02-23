@@ -1,84 +1,123 @@
-matmul_naive!: 85.4339440015 sec, performance = 0.2 GFLOP/s
-matmul_contiguous!: 4.7581184105 sec, performance = 3.61 GFLOP/s
-matmul_cache_blocking!: 1.703955221 sec, performance = 10.08 GFLOP/s
-mul! (BLAS): 0.1789108735 sec, performance = 96.02 GFLOP/s
+matmul_naive!: 50.7814687035 sec, performance = 0.34 GFLOP/s
+matmul_contiguous!: 3.1090245325 sec, performance = 5.53 GFLOP/s
+matmul_cache_blocking!: 1.503729419 sec, performance = 11.42 GFLOP/s
+mul! (BLAS): 0.1931979365 sec, performance = 88.92 GFLOP/s
 Varying block sizes:
-matmul_cache_block (4, 4, 4): 22.1193843225 sec, performance = 0.78 GFLOPS
+matmul_cache_block (4, 4, 4): 19.9095892215 sec, performance = 0.86 GFLOPS
 
-matmul_cache_block (4, 128, 4): 2.9859841245 sec, performance = 5.75 GFLOPS
+matmul_cache_block (4, 128, 4): 2.449700487 sec, performance = 7.01 GFLOPS
 
-matmul_cache_block (4, 256, 4): 2.483888453 sec, performance = 6.92 GFLOPS
+matmul_cache_block (4, 256, 4): 1.912494685 sec, performance = 8.98 GFLOPS
 
-matmul_cache_block (4, 512, 4): 2.1027577115 sec, performance = 8.17 GFLOPS
+matmul_cache_block (4, 512, 4): 1.796365426 sec, performance = 9.56 GFLOPS
 
-matmul_cache_block (4, 4, 8): 19.1668216435 sec, performance = 0.9 GFLOPS
+matmul_cache_block (4, 4, 8): 16.492078344 sec, performance = 1.04 GFLOPS
 
-matmul_cache_block (4, 128, 8): 3.0109994345 sec, performance = 5.71 GFLOPS
+matmul_cache_block (4, 128, 8): 2.1831370775 sec, performance = 7.87 GFLOPS
 
-matmul_cache_block (4, 256, 8): 2.5626570015 sec, performance = 6.7 GFLOPS
+matmul_cache_block (4, 256, 8): 1.9826877945 sec, performance = 8.66 GFLOPS
 
-matmul_cache_block (4, 4, 16): 18.1538874985 sec, performance = 0.95 GFLOPS
+matmul_cache_block (4, 512, 8): 1.715389262 sec, performance = 10.02 GFLOPS
 
-matmul_cache_block (4, 128, 16): 2.9869752215 sec, performance = 5.75 GFLOPS
+matmul_cache_block (4, 4, 16): 16.2363166125 sec, performance = 1.06 GFLOPS
 
-matmul_cache_block (4, 4, 32): 18.2044187265 sec, performance = 0.94 GFLOPS
+matmul_cache_block (4, 128, 16): 2.343481457 sec, performance = 7.33 GFLOPS
 
-matmul_cache_block (4, 4, 64): 19.282226947 sec, performance = 0.89 GFLOPS
+matmul_cache_block (4, 256, 16): 2.0836792945 sec, performance = 8.24 GFLOPS
 
-matmul_cache_block (8, 4, 4): 16.5841421145 sec, performance = 1.04 GFLOPS
+matmul_cache_block (4, 4, 32): 15.810158075 sec, performance = 1.09 GFLOPS
 
-matmul_cache_block (8, 128, 4): 2.1076057495 sec, performance = 8.15 GFLOPS
+matmul_cache_block (4, 128, 32): 2.36572371 sec, performance = 7.26 GFLOPS
 
-matmul_cache_block (8, 256, 4): 1.779680233 sec, performance = 9.65 GFLOPS
+matmul_cache_block (4, 4, 64): 15.5246960435 sec, performance = 1.11 GFLOPS
 
-matmul_cache_block (8, 4, 8): 14.8899079735 sec, performance = 1.15 GFLOPS
+matmul_cache_block (8, 4, 4): 16.2101159775 sec, performance = 1.06 GFLOPS
 
-matmul_cache_block (8, 128, 8): 2.133948042 sec, performance = 8.05 GFLOPS
+matmul_cache_block (8, 128, 4): 1.647329875 sec, performance = 10.43 GFLOPS
 
-matmul_cache_block (8, 256, 8): 1.9271842795 sec, performance = 8.91 GFLOPS
+matmul_cache_block (8, 256, 4): 1.5321688665 sec, performance = 11.21 GFLOPS
 
-matmul_cache_block (8, 4, 16): 14.648880047 sec, performance = 1.17 GFLOPS
+matmul_cache_block (8, 512, 4): 1.370285037 sec, performance = 12.54 GFLOPS
 
-matmul_cache_block (8, 128, 16): 2.124001614 sec, performance = 8.09 GFLOPS
+matmul_cache_block (8, 4, 8): 13.842892643 sec, performance = 1.24 GFLOPS
 
-matmul_cache_block (8, 4, 32): 14.476435366 sec, performance = 1.19 GFLOPS
+matmul_cache_block (8, 128, 8): 1.671509358 sec, performance = 10.28 GFLOPS
 
-matmul_cache_block (8, 4, 64): 15.076213686 sec, performance = 1.14 GFLOPS
+matmul_cache_block (8, 256, 8): 1.5236926185 sec, performance = 11.28 GFLOPS
 
-matmul_cache_block (16, 4, 4): 13.40007226 sec, performance = 1.28 GFLOPS
+matmul_cache_block (8, 4, 16): 13.72509102 sec, performance = 1.25 GFLOPS
 
-matmul_cache_block (16, 128, 4): 1.6091670785 sec, performance = 10.68 GFLOPS
+matmul_cache_block (8, 128, 16): 1.799399692 sec, performance = 9.55 GFLOPS
 
-matmul_cache_block (16, 4, 8): 12.8240841995 sec, performance = 1.34 GFLOPS
+matmul_cache_block (8, 256, 16): 1.622875534 sec, performance = 10.59 GFLOPS
 
-matmul_cache_block (16, 128, 8): 1.6916781855 sec, performance = 10.16 GFLOPS
+matmul_cache_block (8, 4, 32): 14.6323295285 sec, performance = 1.17 GFLOPS
 
-matmul_cache_block (16, 4, 16): 12.839897028 sec, performance = 1.34 GFLOPS
+matmul_cache_block (8, 128, 32): 1.822767022 sec, performance = 9.43 GFLOPS
 
-matmul_cache_block (16, 128, 16): 1.703042665 sec, performance = 10.09 GFLOPS
+matmul_cache_block (8, 4, 64): 14.2319986895 sec, performance = 1.21 GFLOPS
 
-matmul_cache_block (16, 4, 32): 13.0698384525 sec, performance = 1.31 GFLOPS
+matmul_cache_block (16, 4, 4): 14.425472699 sec, performance = 1.19 GFLOPS
 
-matmul_cache_block (16, 4, 64): 12.6606296065 sec, performance = 1.36 GFLOPS
+matmul_cache_block (16, 128, 4): 1.4224980965 sec, performance = 12.08 GFLOPS
 
-matmul_cache_block (32, 4, 4): 11.7761098775 sec, performance = 1.46 GFLOPS
+matmul_cache_block (16, 256, 4): 1.2763506925 sec, performance = 13.46 GFLOPS
 
-matmul_cache_block (32, 4, 8): 11.535960479 sec, performance = 1.49 GFLOPS
+matmul_cache_block (16, 4, 8): 12.499364847 sec, performance = 1.37 GFLOPS
 
-matmul_cache_block (32, 4, 16): 11.686662651 sec, performance = 1.47 GFLOPS
+matmul_cache_block (16, 128, 8): 1.3570777395 sec, performance = 12.66 GFLOPS
 
-matmul_cache_block (32, 4, 32): 11.8108117055 sec, performance = 1.45 GFLOPS
+matmul_cache_block (16, 256, 8): 1.228773783 sec, performance = 13.98 GFLOPS
 
-matmul_cache_block (32, 4, 64): 11.4746071875 sec, performance = 1.5 GFLOPS
+matmul_cache_block (16, 4, 16): 12.9162009565 sec, performance = 1.33 GFLOPS
 
-matmul_cache_block (64, 4, 4): 11.1000543765 sec, performance = 1.55 GFLOPS
+matmul_cache_block (16, 128, 16): 1.504974135 sec, performance = 11.42 GFLOPS
 
-matmul_cache_block (64, 4, 8): 11.099990203 sec, performance = 1.55 GFLOPS
+matmul_cache_block (16, 4, 32): 12.96624424 sec, performance = 1.32 GFLOPS
 
-matmul_cache_block (64, 4, 16): 11.0770349215 sec, performance = 1.55 GFLOPS
+matmul_cache_block (16, 128, 32): 1.541720266 sec, performance = 11.14 GFLOPS
 
-matmul_cache_block (64, 4, 32): 11.138917521 sec, performance = 1.54 GFLOPS
+matmul_cache_block (16, 4, 64): 12.921425586 sec, performance = 1.33 GFLOPS
 
-matmul_cache_block (64, 4, 64): 10.9291139855 sec, performance = 1.57 GFLOPS
+matmul_cache_block (32, 4, 4): 13.3991070315 sec, performance = 1.28 GFLOPS
 
-1536.164561 seconds (1.37 M allocations: 282.833 MiB, 0.82% gc time, 0.11% compilation time)
+matmul_cache_block (32, 128, 4): 1.2669083315 sec, performance = 13.56 GFLOPS
+
+matmul_cache_block (32, 4, 8): 11.570554118 sec, performance = 1.48 GFLOPS
+
+matmul_cache_block (32, 128, 8): 1.215529421 sec, performance = 14.13 GFLOPS
+
+matmul_cache_block (32, 4, 16): 12.1722855385 sec, performance = 1.41 GFLOPS
+
+matmul_cache_block (32, 128, 16): 1.3716007135 sec, performance = 12.53 GFLOPS
+
+matmul_cache_block (32, 4, 32): 12.107578383 sec, performance = 1.42 GFLOPS
+
+matmul_cache_block (32, 4, 64): 12.1378731655 sec, performance = 1.42 GFLOPS
+
+matmul_cache_block (64, 4, 4): 12.9798870335 sec, performance = 1.32 GFLOPS
+
+matmul_cache_block (64, 4, 8): 11.239033439 sec, performance = 1.53 GFLOPS
+
+matmul_cache_block (64, 4, 16): 11.817220823 sec, performance = 1.45 GFLOPS
+
+matmul_cache_block (64, 4, 32): 11.843976234 sec, performance = 1.45 GFLOPS
+
+matmul_cache_block (64, 4, 64): 11.768497569 sec, performance = 1.46 GFLOPS
+
+1426.844327 seconds (2.26 M allocations: 302.470 MiB, 2.68% gc time, 0.19% compilation time)
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n746
+Job ID: 3244382
+Cluster: uc3
+User/Group: ka_rx8865/ka_scc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:23:23
+CPU Efficiency: 48.28% of 00:48:26 core-walltime
+Job Wall-clock time: 00:24:13
+Memory Utilized: 447.24 MB
+Memory Efficiency: 8.74% of 5.00 GB (5.00 GB/node)
