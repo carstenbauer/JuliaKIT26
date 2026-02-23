@@ -37,7 +37,7 @@ The simplest way to download the workshop materials (this GitHub repository) is 
 git clone https://github.com/carstenbauer/JuliaKIT26
 ```
 
-If you don't have Git, you can either [install it](https://github.com/git-guides/install-git) or manually [download the materials as a `.zip` archive](https://github.com/carstenbauer/JuliaKIT26/archive/refs/heads/main.zip) instead.
+If you don't have Git, you can either [install git](https://github.com/git-guides/install-git) (highly recommended) or manually [download the materials as a `.zip` archive](https://github.com/carstenbauer/JuliaKIT26/archive/refs/heads/main.zip) instead.
 
 ### Installing the Julia environment
 
@@ -47,7 +47,7 @@ Within the `JuliaKIT26` directory (that you've cloned or downloaded above), run 
 julia install.jl
 ```
 
-**Remark: The installation might take a couple of minutes and a few GB of disk space** (worst case: up to ~10 minutes and up to ~2.6 GB). The reason is that we also install binary dependencies (e.g. MPI) via Julia's Package manager to be as self-contained as possible. If you want to remove everything after the course, simply delete `~/.julia`.
+**Remark: The installation might take some time and a few GB of disk space** (last time I checked: up to ~10 minutes and up to ~2.6 GB). The reason is that we also install binary dependencies (e.g. MPI) via Julia's Package manager to be as self-contained as possible. If you want to remove everything after the course, you can simply delete `~/.julia`.
 
 ### Update `PATH` environment variable
 
@@ -57,18 +57,18 @@ We will use `mpiexecjl` during the course, which - after the installation above 
 export PATH=$HOME/.julia/bin:$PATH
 ```
 
-I don't have Windows, and don't know how to do it there, but you should readily find instructions on Google.
+If you're on Windows, please [ask Claude](https://claude.ai/new?q=how+to+add+%24HOME%2F.julia%2Fbin+to+the+PATH+environment+variable+on+windows%3F) oder [ask ChatGPT](https://chatgpt.com/?prompt=how+to+add+%60%24HOME%2F.julia%2Fbin%60+to+the+%60PATH%60+environment+variable+on+windows%3F) how to set the environment variable.
 
 ### Install Visual Studio Code (+ extensions)
 
 * Download Visual Studio Code from https://code.visualstudio.com/download and install it.
-* Afterwards, install the following two extensions (the linked pages should have "Install" buttons, respectively)
+* Next, install the following two extensions (the linked pages should have "Install" buttons, respectively)
   * [Remote - SSH extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
   * [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia)
 
 ### Install Jupyter Lab
 
-Technically, you don't necessarily need Jupyter Lab, because Visual Studio Code can also open notebook files. However, I highly recommend that you install it:
+Technically, you don't necessarily need Jupyter Lab, because Visual Studio Code can also open notebook files. However, I highly recommend that you install Jupyter Lab nonetheless:
 
 * [Installation instructions](https://jupyter.org/install)
 
