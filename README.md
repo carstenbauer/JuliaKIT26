@@ -83,5 +83,9 @@ IJulia.notebook()
 <details>
    <summary> <h2>Preparing your KIT account (click to unfold)</h2> </summary>
 
+The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have either already been provided or will follow by email shortly.
+
+### On the Cluster
+
 TBD
 </details>
