@@ -4,7 +4,7 @@ A four-day workshop that will take place at [KIT](https://www.kit.edu/) in March
    
 **Trainer:** [Dr. Carsten Bauer](https://github.com/carstenbauer)
 
-## Schedule (tentative)
+## Schedule
 
 <a href="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.pdf"><img src="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.png" width=720px></a>
 
@@ -57,7 +57,7 @@ We will use `mpiexecjl` during the course, which - after the installation above 
 export PATH=$HOME/.julia/bin:$PATH
 ```
 
-If you're on Windows, please [ask Claude](https://claude.ai/new?q=how+to+add+%24HOME%2F.julia%2Fbin+to+the+PATH+environment+variable+on+windows%3F) oder [ask ChatGPT](https://chatgpt.com/?prompt=how+to+add+%60%24HOME%2F.julia%2Fbin%60+to+the+%60PATH%60+environment+variable+on+windows%3F) how to set the environment variable.
+If you're on Windows, please [ask Claude](https://claude.ai/new?q=how+to+add+%24HOME%2F.julia%2Fbin+to+the+PATH+environment+variable+on+windows%3F) or [ask ChatGPT](https://chatgpt.com/?prompt=how+to+add+%60%24HOME%2F.julia%2Fbin%60+to+the+%60PATH%60+environment+variable+on+windows%3F) how to set the environment variable.
 
 ### Install Visual Studio Code (+ extensions)
 
