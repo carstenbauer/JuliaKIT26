@@ -83,9 +83,22 @@ IJulia.notebook()
 <details>
    <summary> <h2>Preparing your KIT account (click to unfold)</h2> </summary>
 
-The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have either already been provided or will follow by email shortly.
+The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have been provided by email on March 6.
+
+Once you have access to the cluster, connect to it
+
+```
+ssh <yourlogin>@uc3.scc.kit.edu
+```
+
+and enter your OTP and password as required. Then, follow the instructions below.
 
 ### On the Cluster
 
-TBD
+1. Clone the workshop material into your home directory:
+    ```
+    git clone https://github.com/carstenbauer/JuliaKIT26
+    ```
+2. 
+
 </details>
