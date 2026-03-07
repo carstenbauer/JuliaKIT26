@@ -10,6 +10,9 @@ A four-day workshop that will take place at [KIT](https://www.kit.edu/) in March
 
 ## Preparing for the course
 
+> [!IMPORTANT]
+> The workshop material is still being finalized. Please follow the instructions below but don't forget to run a `git pull` on the first workshop day to make sure you have the latest version.
+
 <details>
    <summary> <h2>Preparing your laptop (click to unfold)</h2> </summary>
 
