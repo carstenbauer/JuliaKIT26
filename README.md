@@ -95,10 +95,14 @@ and enter your OTP and password as required. Then, follow the instructions below
 
 ### On the Cluster
 
-1. Clone the workshop material into your home directory:
+Run the following commands:
     ```
     git clone https://github.com/carstenbauer/JuliaKIT26
+    echo 'source /pfs/work9/workspace/scratch/ka_rx8865-juliakit26/bashrc.sh' >> $HOME/.bashrc
     ```
-2. 
+* The first command clones the workshop material to your home directory (`$HOME/JuliaKIT26`).
+* The second command appends the course settings (environment variables) to your `$HOME/.bashrc`.
+
+If you want to reverse these actions after the course, simply `rm -rf $HOME/JuliaKIT26` and remove the corresponding line from your `.bashrc`.
 
 </details>
