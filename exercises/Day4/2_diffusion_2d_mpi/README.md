@@ -77,7 +77,7 @@ Let's conduct a quick weak scaling benchmark in which we vary the number of MPI 
     - What are the parallel efficiencies for the cases where we use $n=2$ MPI ranks and $n=8$ MPI ranks? (Reminder: you want to take the ratio of the times $t(1)/t(n)$.)
 
 
-**Cluster only:** To avoid potential contentions, let us run the computation on multiple nodes with 1 MPI rank per NUMA domain on each node. On the given cluster, this results in 2 MPI ranks per node.
+**Cluster only:** To avoid potential contentions, let us run the computation on multiple nodes with 1 MPI rank per socket, i.e. 2 MPI ranks per node.
 
 3. Submit `job_script_bench_multinode.sh` using `qsub`.
 4. Inspect the results in `job_script_bench_multinode.out` and compute the parallel efficiencies as above. What do you observe? Have they improved?

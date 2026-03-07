@@ -1,25 +1,19 @@
 #!/bin/bash
-#PBS -N diff2dmultigpu
-#PBS -l select=1:node_type=clx-ai:ncpus=36:mem=100gb:mpiprocs=4
-#PBS -l walltime=00:10:00
-#PBS -j oe
-#PBS -o job_script.out
-#PBS -q smp
+#SBATCH --job-name=diff2dmultigpu
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --gres=gpu:4
+#SBATCH --mem=100G
+#SBATCH --time=00:10:00
+#SBATCH --output=job_script.out
+#SBATCH --partition=gpu_a100_short
 
-WORKDIR=$(pwd)
-if [[ -n "${PBS_O_WORKDIR}" ]]; then
-    # we're running as a cluster job
-    # change to the directory that the job was submitted from ...
-    WORKDIR=$PBS_O_WORKDIR
-    # ... and load the module(s)
-    ml juliahpc
-    ml mpi/openmpi
+if [[ -n "${SLURM_JOB_ID}" ]]; then
+    module load juliahpc
+    export JULIAKIT26_DEPOT_PATH="/pfs/work9/workspace/scratch/ka_rx8865-juliakit26/.juliakit26"
+    export JULIA_DEPOT_PATH="$TMPDIR/.julia_$USER:$JULIAKIT26_DEPOT_PATH"
 fi
-cd $WORKDIR
 
-# some env vars
-export OMPI_MCA_mpi_cuda_support=1
-export OMPI_MCA_mca_component_show_load_errors=0
 export JULIA_CUDA_MEMORY_POOL=none
 
 # run MPI + CUDA code on 4 GPUs

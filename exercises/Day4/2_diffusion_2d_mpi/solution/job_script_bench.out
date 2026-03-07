@@ -2,29 +2,44 @@
 
 #### Run nranks=1
 nprocs = 1, dims = (1, 1)
-Time = 9.7676e-01 s, T_eff = 17.00 GB/s 
+Time = 4.8989e+00 s, T_eff = 13.67 GB/s 
 
 
 #### Run nranks=2
 nprocs = 2, dims = (2, 1)
-Time = 1.0662e+00 s, T_eff = 15.58 GB/s 
+Time = 4.9154e+00 s, T_eff = 13.62 GB/s 
 
 
 #### Run nranks=4
 nprocs = 4, dims = (2, 2)
-Time = 1.2220e+00 s, T_eff = 13.59 GB/s 
+Time = 5.0331e+00 s, T_eff = 13.30 GB/s 
 
 
 #### Run nranks=8
 nprocs = 8, dims = (4, 2)
-Time = 1.6426e+00 s, T_eff = 10.11 GB/s 
+Time = 6.0641e+00 s, T_eff = 11.04 GB/s 
 
 
 #### Run nranks=9
 nprocs = 9, dims = (3, 3)
-Time = 1.7816e+00 s, T_eff = 9.32 GB/s 
+Time = 6.9244e+00 s, T_eff = 9.67 GB/s 
 
 
 #### Run nranks=12
 nprocs = 12, dims = (4, 3)
-Time = 2.1719e+00 s, T_eff = 7.65 GB/s 
+Time = 7.0933e+00 s, T_eff = 9.44 GB/s 
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n700
+Job ID: 3277422
+Cluster: uc3
+User/Group: ka_rx8865/ka_scc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 128
+CPU Utilized: 00:06:04
+CPU Efficiency: 2.63% of 03:50:24 core-walltime
+Job Wall-clock time: 00:01:48
+Memory Utilized: 5.13 GB
+Memory Efficiency: 6.41% of 80.00 GB (80.00 GB/node)

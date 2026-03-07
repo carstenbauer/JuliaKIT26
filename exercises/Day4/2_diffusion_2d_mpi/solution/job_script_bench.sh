@@ -1,30 +1,23 @@
 #!/bin/bash
-#PBS -N diff2dmpi_bench
-#PBS -l select=1:node_type=skl:ncpus=40:mem=80gb:mpiprocs=16
-##PBS -l select=1:node_type=clx-ai:ncpus=36:mem=72gb:mpiprocs=16
-#PBS -l walltime=00:10:00
-#PBS -j oe
-#PBS -o job_script_bench.out
-#PBS -q smp
+#SBATCH --job-name=diff2dmpi_bench
+#SBATCH --nodes=1
+#SBATCH --ntasks=40
+#SBATCH --threads-per-core=1
+#SBATCH --mem=80G
+#SBATCH --time=00:10:00
+#SBATCH --output=job_script_bench.out
+#SBATCH --partition=cpu_il
+#SBATCH --exclusive
 
-WORKDIR=$(pwd)
-if [[ -n "${PBS_O_WORKDIR}" ]]; then
-    # we're running as a cluster job
-    # change to the directory that the job was submitted from ...
-    WORKDIR=$PBS_O_WORKDIR
-    # ... and load the module(s)
-    ml juliahpc
-    ml mpi/openmpi
+if [[ -n "${SLURM_JOB_ID}" ]]; then
+    module load juliahpc
+    export JULIAKIT26_DEPOT_PATH="/pfs/work9/workspace/scratch/ka_rx8865-juliakit26/.juliakit26"
+    export JULIA_DEPOT_PATH="$TMPDIR/.julia_$USER:$JULIAKIT26_DEPOT_PATH"
 fi
-cd $WORKDIR
-
-# OpenMPI settings
-export OMPI_MCA_mpi_cuda_support=0
-export OMPI_MCA_mca_component_show_load_errors=0
 
 # run MPI code
 for i in 1 2 4 8 9 12
 do
     echo -e "\n\n#### Run nranks=$i"
-    mpiexecjl -n $i --map-by numa --bind-to core julia --project diffusion_2d_mpi.jl 1024 nosave
+    mpiexecjl -n $i --map-by numa --bind-to core julia --project diffusion_2d_mpi.jl 2056 nosave
 done
