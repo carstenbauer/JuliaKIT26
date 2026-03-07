@@ -13,8 +13,8 @@ A four-day workshop that will take place at [KIT](https://www.kit.edu/) in March
 > [!IMPORTANT]
 > The workshop material is still being finalized. Please follow the instructions below but don't forget to run a `git pull` on the first workshop day to make sure you have the latest version.
 
-<details>
-   <summary> <h2>Preparing your laptop (click to unfold)</h2> </summary>
+<details open>
+   <summary> <h2>Preparing your laptop (click to fold/unfold)</h2> </summary>
 
 ### Install Julia 1.12
 
@@ -83,8 +83,8 @@ IJulia.notebook()
 ```
 </details>
 
-<details>
-   <summary> <h2>Preparing your account on bwUniCluster 3.0 (click to unfold)</h2> </summary>
+<details open>
+   <summary> <h2>Preparing your account on bwUniCluster 3.0 (click to fold/unfold)</h2> </summary>
 
 The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have been provided by email on March 6. Please follow them before proceeding.
 
