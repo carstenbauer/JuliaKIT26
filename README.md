@@ -4,7 +4,7 @@ A four-day workshop that will take place at [KIT](https://www.kit.edu/) in March
    
 **Trainer:** [Dr. Carsten Bauer](https://github.com/carstenbauer)
 
-## Schedule (tentative)
+## Schedule
 
 <a href="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.pdf"><img src="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.png" width=720px></a>
 
