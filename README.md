@@ -8,7 +8,7 @@ A four-day workshop that will take place at [KIT](https://www.kit.edu/) in March
 
 <a href="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.pdf"><img src="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.png" width=720px></a>
 
-## Preparing for the course (!)
+## Preparing for the course
 
 > [!IMPORTANT]
 > The workshop material is still being finalized. Please follow the instructions below but don't forget to run a `git pull` on the first workshop day to make sure you have the latest version.
