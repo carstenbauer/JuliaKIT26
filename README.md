@@ -84,17 +84,17 @@ IJulia.notebook()
 </details>
 
 <details>
-   <summary> <h2>Preparing your KIT account (click to unfold)</h2> </summary>
+   <summary> <h2>Preparing your account on bwUniCluster 3.0 (click to unfold)</h2> </summary>
 
-The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have been provided by email on March 6.
+The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have been provided by email on March 6. Please follow them before proceeding.
 
-Once you have access to the cluster, connect to it
+Once you have access, connect to the cluster via SSH,
 
 ```
 ssh <yourlogin>@uc3.scc.kit.edu
 ```
 
-and enter your OTP and password as required. Then, follow the instructions below.
+and enter your OTP and password as required.
 
 ### On the Cluster
 
