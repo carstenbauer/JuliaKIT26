@@ -4,7 +4,7 @@ A four-day workshop that will take place at [KIT](https://www.kit.edu/) in March
    
 **Trainer:** [Dr. Carsten Bauer](https://github.com/carstenbauer)
 
-## Schedule (tentative)
+## Schedule
 
 <a href="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.pdf"><img src="https://github.com/carstenbauer/JuliaKIT26/raw/main/orga/timetable.png" width=720px></a>
 
@@ -57,7 +57,7 @@ We will use `mpiexecjl` during the course, which - after the installation above 
 export PATH=$HOME/.julia/bin:$PATH
 ```
 
-If you're on Windows, please [ask Claude](https://claude.ai/new?q=how+to+add+%24HOME%2F.julia%2Fbin+to+the+PATH+environment+variable+on+windows%3F) oder [ask ChatGPT](https://chatgpt.com/?prompt=how+to+add+%60%24HOME%2F.julia%2Fbin%60+to+the+%60PATH%60+environment+variable+on+windows%3F) how to set the environment variable.
+If you're on Windows, please [ask Claude](https://claude.ai/new?q=how+to+add+%24HOME%2F.julia%2Fbin+to+the+PATH+environment+variable+on+windows%3F) or [ask ChatGPT](https://chatgpt.com/?prompt=how+to+add+%60%24HOME%2F.julia%2Fbin%60+to+the+%60PATH%60+environment+variable+on+windows%3F) how to set the environment variable.
 
 ### Install Visual Studio Code (+ extensions)
 
@@ -83,5 +83,26 @@ IJulia.notebook()
 <details>
    <summary> <h2>Preparing your KIT account (click to unfold)</h2> </summary>
 
-TBD
+The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have been provided by email on March 6.
+
+Once you have access to the cluster, connect to it
+
+```
+ssh <yourlogin>@uc3.scc.kit.edu
+```
+
+and enter your OTP and password as required. Then, follow the instructions below.
+
+### On the Cluster
+
+Run the following commands:
+    ```
+    git clone https://github.com/carstenbauer/JuliaKIT26
+    echo 'source /pfs/work9/workspace/scratch/ka_rx8865-juliakit26/bashrc.sh' >> $HOME/.bashrc
+    ```
+* The first command clones the workshop material to your home directory (`$HOME/JuliaKIT26`).
+* The second command appends the course settings (environment variables) to your `$HOME/.bashrc`.
+
+If you want to reverse these actions after the course, simply `rm -rf $HOME/JuliaKIT26` and remove the corresponding line from your `.bashrc`.
+
 </details>
