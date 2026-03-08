@@ -1,5 +1,5 @@
 #
-# to be executed in the HOME directory of the user accounts on the HLRS laptops
+# to be executed in the HOME directory
 #
 
 # install juliaup + julia (if julia doesn't already exist)
@@ -8,7 +8,7 @@ if ! command -v julia &>/dev/null; then
   curl -fsSL https://install.julialang.org | sh -s -- --yes
 fi
 
-# install workshop environment (includes LIKWID)
+# install workshop environment (excluding LIKWID)
 git clone https://github.com/carstenbauer/JuliaKIT26
 cd JuliaKIT26
 julia install.jl full
