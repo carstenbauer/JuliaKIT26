@@ -22,7 +22,7 @@ cachesize()
 ## Tasks
 
 1) Inspect the file `cache_bandwidths.jl` and implement the missing piece (look for the TODO annotation).
-2) Run the benchmark (see the `hlrs_job.qbs` job script).
+2) Run the benchmark (see the `job_script.sh` job script).
   * Do you understand the trend of the resulting plot (`sdaxpy_contiguous.svg`)?
   * Which maximal bandwidth values (in GB/s) do you obtain for L1, L2, L3, and main memory? (Check the output file.)
 

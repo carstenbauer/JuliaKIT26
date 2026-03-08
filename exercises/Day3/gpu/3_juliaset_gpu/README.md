@@ -1,6 +1,6 @@
 # Exercise: Julia Set on NVIDIA GPU
 
-**Note: This exercise can be done on a HLRS compute node with NVIDIA V100 GPUs (recommended) or the local laptop.**
+**Note: This exercise should be done on a cluster compute node with NVIDIA GPUs.**
 
 In this exercise, we will revisit the problem of computing an image of the Julia Set. This time we will compare a sequential CPU variant to a parallel GPU implementation (using a custom CUDA kernel).
 

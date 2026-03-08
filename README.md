@@ -100,11 +100,11 @@ and enter your OTP and password as required.
 
 Run the following commands:
 ```
-git clone https://github.com/carstenbauer/JuliaKIT26 $HOME/JuliaKIT26
-echo 'source /pfs/work9/workspace/scratch/ka_rx8865-juliakit26/bashrc.sh' >> $HOME/.bashrc
+bash /pfs/work9/workspace/scratch/ka_rx8865-juliakit26/setup.sh
 ```
-* The first command clones the workshop material to your home directory (`$HOME/JuliaKIT26`).
-* The second command appends the course settings (environment variables) to your `$HOME/.bashrc`.
+Essentially, the script does two things:
+* Clones the workshop material to your home directory (`$HOME/JuliaKIT26`).
+* Appends a single line to your `$HOME/.bashrc` that loads the course settings (environment variables).
 
 If you want to reverse these actions after the course, simply `rm -rf $HOME/JuliaKIT26` and remove the corresponding line from your `.bashrc`.
 
