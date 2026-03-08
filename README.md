@@ -86,9 +86,12 @@ IJulia.notebook()
 <details open>
    <summary> <h2>Preparing your account on bwUniCluster 3.0 (click to fold/unfold)</h2> </summary>
 
-The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have been provided by email on March 6. Please follow them before proceeding.
+<blockquote>
+<strong>⚠️ Important</strong><br>
+The most important step is to apply for access to the <b>bwUniCluster 3.0</b>. Instructions have been provided by email on March 6. Please follow them before proceeding..
+</blockquote>
 
-Once you have access, connect to the cluster via SSH,
+Connect to the cluster via SSH,
 
 ```
 ssh <yourlogin>@uc3.scc.kit.edu
@@ -96,9 +99,7 @@ ssh <yourlogin>@uc3.scc.kit.edu
 
 and enter your OTP and password as required.
 
-### On the Cluster
-
-Run the following commands:
+Once on the cluster, run the following commands:
 ```
 bash /pfs/work9/workspace/scratch/ka_rx8865-juliakit26/setup.sh
 ```
