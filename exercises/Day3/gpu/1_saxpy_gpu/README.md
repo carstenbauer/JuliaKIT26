@@ -1,6 +1,6 @@
 # Exercise: SAXPY on NVIDIA GPU
 
-**Note: This exercise can be done on a HLRS compute node with NVIDIA V100 GPUs (recommended) or the local laptop.**
+**Note: This exercise can be done on a cluster compute node with NVIDIA GPUs.**
 
 In this exercise, you will implement two GPU-variants of the **SAXPY** kernel (`y[i] = a * x[i] + y[i]`, `Float32` "single" precision):
 
