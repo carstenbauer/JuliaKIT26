@@ -50,7 +50,7 @@ Within the `JuliaKIT26` directory (that you've cloned or downloaded above), run 
 julia install.jl
 ```
 
-**Remark: The installation might take some time and a few GB of disk space** (last time I checked: up to ~10 minutes and up to ~2.6 GB). The reason is that we also install binary dependencies (e.g. MPI) via Julia's Package manager to be as self-contained as possible. If you want to remove everything after the course, you can simply delete `~/.julia`.
+**Remark: The installation might take some time and a few GB of disk space** (last time I checked: up to ~10 minutes and up to ~2.6 GB). The reason is that we also install binary dependencies (e.g. MPI) via Julia's Package manager to be as self-contained as possible. **If you want to remove everything after the course, you can simply delete `~/.julia`.**
 
 ### Update `PATH` environment variable
 
