@@ -54,7 +54,7 @@ julia install.jl
 
 ### Update `PATH` environment variable
 
-We will use `mpiexecjl` during the course, which - after the installation above - lies in `~/.julia/bin`. To make it available everywhere, we need to add `~/.julia/bin` to the `PATH` environment variable. On Linux/macOS, you can add the following line to your `.bashrc` (or whatever file gets automatically loaded by your shell):
+We will use `mpiexecjl` during the course, which - after the installation above - lies in `$HOME/.julia/bin` (or `C:\Users\YourName\.julia\bin` on Windows). To make it available everywhere, we need to add this path to the `PATH` environment variable. On Linux/macOS, you can add the following line to your `.bashrc` (or whatever file gets automatically loaded by your shell):
 
 ```
 export PATH=$HOME/.julia/bin:$PATH
