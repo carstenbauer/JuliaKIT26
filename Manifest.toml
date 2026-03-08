@@ -2,7 +2,7 @@
 
 julia_version = "1.12.5"
 manifest_format = "2.0"
-project_hash = "c75a711789e5e5f0854903d4d12225867b0cd9eb"
+project_hash = "d94718e78d0e83a4d7f4824d7fbb394e611a6bc2"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "f7304359109c768cf32dc5fa2d371565bb63b68a"
@@ -1471,6 +1471,11 @@ git-tree-sha1 = "aaafe88dccbd957a8d82f7d05be9b69172e0cee3"
 pinned = true
 uuid = "88015f11-f218-50d7-93a8-a6af411a945d"
 version = "4.0.1+0"
+
+[[deps.LIKWID]]
+git-tree-sha1 = "51a916bbd4e7e44a3fdf03f3a0b7558e0f39baf0"
+uuid = "bf22376a-e803-4184-b2ed-56326e3bff83"
+version = "0.1.1"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Unicode"]
