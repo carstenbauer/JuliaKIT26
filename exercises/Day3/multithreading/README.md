@@ -1,12 +1,12 @@
 # Exercises - Day 3
 
-### `1_montecarlo_pi_multithreading`
+### `1_montecarlo_pi_multithreading` <small>(definitely do this one)</small>
 
 **Learnings:** multithreading a simple algorithm, uniform and non-uniform workload, nested multithreading
 
 In this exercise, you will parallelize the famous Monte Carlo algorithm that can produce the value of π=3.141... with desirable precision. Specifically, you will parallelize the algorithm using Julia's multithreading tools (e.g. `@spawn`).
 
-### `2_diffusion_2d_multithreading`
+### `2_diffusion_2d_multithreading` <small>(try to at least read the README, relevant for tomorrow)</small>
 
 **Learnings:** solving a physical (stencil) problem in parallel, strong scaling benchmark.
 
@@ -14,7 +14,7 @@ Considering the 2D diffusion equation, you will implement a multithreaded, itera
 
 **Note:** Later in the course, we will come back to this very solver and (1) move it to the GPU and (2) parallelize it with MPI, to run it on multiple compute nodes (and multiple GPUs).
 
-### `3_daxpy_cpu` (cluster only)
+### `3_daxpy_cpu` <small>(cluster only, maybe skip)</small>
 
 **Learnings:** NUMA domains, thread pinning, maximal memory bandwidth.
 
