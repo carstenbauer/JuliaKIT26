@@ -97,19 +97,20 @@ function main()
     C = zeros(N, N)
     A = rand(N, N)
     B = rand(N, N)
+    C_correct = A*B
 
     # naive
-    @test matmul_naive!(C, A, B) ≈ mul!(C, A, B)
+    @test matmul_naive!(C, A, B) ≈ C_correct
     t_naive = @belapsed matmul_naive!($C, $A, $B) samples = 1 evals = 2
     println("matmul_naive!: ", t_naive, " sec, performance = ", round(2.0e-9 * N^3 / t_naive, digits=2), " GFLOP/s")
 
     # contiguous
-    # @test matmul_contiguous!(C, A, B) ≈ mul!(C, A, B) # this should give true, otherwise your implementation is incorrect.
+    # @test matmul_contiguous!(C, A, B) ≈ C_correct # this should give true, otherwise your implementation is incorrect.
     # t_contiguous = @belapsed matmul_contiguous!($C, $A, $B) samples = 1 evals = 2
     # println("matmul_contiguous!: ", t_contiguous, " sec, performance = ", round(2.0e-9 * N^3 / t_contiguous, digits=2), " GFLOP/s")
 
     # cache blocking
-    # @test matmul_cache_blocking!(C, A, B) ≈ mul!(C, A, B)
+    # @test matmul_cache_blocking!(C, A, B) ≈ C_correct
     # t_cache_blocking = @belapsed matmul_cache_blocking!($C, $A, $B) samples = 1 evals = 2
     # println("matmul_cache_blocking!: ", t_cache_blocking, " sec, performance = ", round(2.0e-9 * N^3 / t_cache_blocking, digits=2), " GFLOP/s")
 
