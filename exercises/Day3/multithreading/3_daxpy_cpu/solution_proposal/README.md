@@ -55,7 +55,7 @@ How can we control where our data (say parts of an array) is located? We can use
 
 3. Implement the TODOs in the function `generate_input_data`. Depending on the value of the keyword argument `parallel`, this function will fill the input vectors for the (D)AXPY operation with random numbers either sequentially or in parallel. (**Note:** This might seem irrelevant but very much isn't be because of the **first-touch policy** mentioned above.)
 
-4. Submit the given job script via `qsub job_script.sh`. This will run the file `daxpy_cpu.jl` with multiple Julia threads. The job might take a few minutes to start/run.
+4. Submit the given job script via `sbatch job_script.sh`. This will run the file `daxpy_cpu.jl` with multiple Julia threads. The job might take a few minutes to start/run.
 
 5. While the job is running, make sure that you know the core features (number of cores/sockets/NUMA domains etc.) of the cluster compute nodes you're running on. (You could use `using SysInfo; sysinfo()`, for example.)
 
@@ -82,11 +82,11 @@ The columns (`:serial`, `:parallel`) indicate how the data was initialized. The 
 * **"Answers":**
   * We see that pinning threads in combination with parallel initialization is absolutely crucial for performance!
   * The thread pinning is (more or less) irrelevant in the `:serial` case because the entire data lies in the first memory domain (because it has been written by the "main" Julia thread that is pinned to the first CPU-core of the system). Consequently the performance is limited by the corresponding memory channel when multiple threads try to read and write the data in parallel.
-  * Essentially, we find the relative factors 1 (for `:cores`), 2 (for `:sockets`) and 2 (for `:numa`). This makes quite a lot of sense as there are 2 sockets and NUMA domains in the compute nodes that we're using. We (approximately) observe perfect speedup that scales with the number of memory domains / channels used.
+  * Essentially, we find the relative factors 1 (for `:cores`), 2 (for `:sockets`) and 2 (for `:numa`). This makes quite a lot of sense as there are 2 sockets and 4 NUMA domains in the compute nodes that we're using. We (approximately) observe a speedup that scales with the number of memory domains / channels used.
 
 6. Compare the results that you've obtained for `:static` and `:dynamic`. Can you explain (qualitatively) how the performance difference comes about?
 
 * **"Answer":**
   * With dynamic scheduling, the task-thread mapping isn't guaranteed. It isn't clear 1) which thread initializes which part of the data (thus, it's placement among NUMA domains is uncertain) and 2) on which threads the parallel tasks of our axpy kernel will eventually run (there might be a mismatch between data location and thread placement). Hence, we anticipate lower performance with dynamic scheduling.
 
-7. **Bonus:** Let's perform a scaling analysis and, among others, run a performance measurement with one Julia thread per core. This will give us a (crude) empirical estimate for the maximal memory bandwidth of a compute node. We've already prepared the Julia script `daxpy_cpu_scaling.jl` for this, which produces tabular output as well as a scaling plot. Run the scaling analysis via `qsub job_script_scaling.sh` and (after maybe ~15 minutes) inspect the results.
+7. **Bonus:** Let's perform a scaling analysis and, among others, run a performance measurement with one Julia thread per core. This will give us a (crude) empirical estimate for the maximal memory bandwidth of a compute node. We've already prepared the Julia script `daxpy_cpu_scaling.jl` for this, which produces tabular output as well as a scaling plot. Run the scaling analysis via `sbatch job_script_scaling.sh` and (after maybe ~15 minutes) inspect the results.

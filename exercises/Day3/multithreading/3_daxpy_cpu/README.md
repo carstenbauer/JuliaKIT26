@@ -55,7 +55,7 @@ How can we control where our data (say parts of an array) is located? We can use
 
 3. Implement the TODOs in the function `generate_input_data`. Depending on the value of the keyword argument `parallel`, this function will fill the input vectors for the (D)AXPY operation with random numbers either sequentially or in parallel. (**Note:** This might seem irrelevant but very much isn't be because of the **first-touch policy** mentioned above.)
 
-4. Submit the given job script via `qsub job_script.sh`. This will run the file `daxpy_cpu.jl` with multiple Julia threads. The job might take a few minutes to start/run.
+4. Submit the given job script via `sbatch job_script.sh`. This will run the file `daxpy_cpu.jl` with multiple Julia threads. The job might take a few minutes to start/run.
 
 5. While the job is running, make sure that you know the core features (number of cores/sockets/NUMA domains etc.) of the cluster compute nodes you're running on. (You could use `using SysInfo; sysinfo()`, for example.)
 
@@ -81,4 +81,4 @@ The columns (`:serial`, `:parallel`) indicate how the data was initialized. The 
 
 6. Compare the results that you've obtained for `:static` and `:dynamic`. Can you explain (qualitatively) how the performance difference comes about?
 
-7. **Bonus:** Let's perform a scaling analysis and, among others, run a performance measurement with one Julia thread per core. This will give us a (crude) empirical estimate for the maximal memory bandwidth of a compute node. We've already prepared the Julia script `daxpy_cpu_scaling.jl` for this, which produces tabular output as well as a scaling plot. Run the scaling analysis via `qsub job_script_scaling.sh` and (after maybe ~15 minutes) inspect the results.
+7. **Bonus:** Let's perform a scaling analysis and, among others, run a performance measurement with one Julia thread per core. This will give us a (crude) empirical estimate for the maximal memory bandwidth of a compute node. We've already prepared the Julia script `daxpy_cpu_scaling.jl` for this, which produces tabular output as well as a scaling plot. Run the scaling analysis via `sbatch job_script_scaling.sh` and (after maybe ~15 minutes) inspect the results.

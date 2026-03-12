@@ -3,52 +3,52 @@
 ┌───────────────┬─────────┬───────────┐
 │ # Threads = 1 │ :serial │ :parallel │
 ├───────────────┼─────────┼───────────┤
-│        :cores │   20.82 │     20.94 │
-│      :sockets │   20.65 │     21.28 │
-│         :numa │   12.04 │      21.1 │
+│        :cores │   13.58 │     20.24 │
+│      :sockets │   16.08 │     15.32 │
+│         :numa │   19.17 │     19.42 │
 └───────────────┴─────────┴───────────┘
 
         Memory Bandwidth (GB/s)
 ┌────────────────┬─────────┬───────────┐
-│ # Threads = 12 │ :serial │ :parallel │
+│ # Threads = 16 │ :serial │ :parallel │
 ├────────────────┼─────────┼───────────┤
-│         :cores │   55.26 │     54.15 │
-│       :sockets │   42.26 │    105.11 │
-│          :numa │   44.35 │    174.54 │
+│         :cores │    74.0 │     74.88 │
+│       :sockets │   71.83 │    143.82 │
+│          :numa │   70.61 │    230.29 │
 └────────────────┴─────────┴───────────┘
 
         Memory Bandwidth (GB/s)
 ┌────────────────┬─────────┬───────────┐
-│ # Threads = 24 │ :serial │ :parallel │
+│ # Threads = 32 │ :serial │ :parallel │
 ├────────────────┼─────────┼───────────┤
-│         :cores │   52.31 │    104.97 │
-│       :sockets │   48.48 │    106.17 │
-│          :numa │   45.47 │     205.3 │
+│         :cores │   76.38 │    150.17 │
+│       :sockets │   75.77 │    148.01 │
+│          :numa │   86.07 │    279.36 │
 └────────────────┴─────────┴───────────┘
 
         Memory Bandwidth (GB/s)
 ┌────────────────┬─────────┬───────────┐
-│ # Threads = 48 │ :serial │ :parallel │
+│ # Threads = 64 │ :serial │ :parallel │
 ├────────────────┼─────────┼───────────┤
-│         :cores │   47.85 │    216.23 │
-│       :sockets │   48.53 │    215.53 │
-│          :numa │   48.19 │    216.02 │
+│         :cores │   81.46 │    295.08 │
+│       :sockets │    69.4 │    293.76 │
+│          :numa │    74.9 │    293.83 │
 └────────────────┴─────────┴───────────┘
-564.685482 seconds (5.24 M allocations: 1.106 TiB, 4.31% gc time, 14.13% compilation time: 9% of which was recompilation)
-332.035571 seconds (6.83 M allocations: 1.245 TiB, 3.14% gc time, 2.79% compilation time: 56% of which was recompilation)
-897.602321 seconds (12.13 M allocations: 2.351 TiB, 3.87% gc time, 9.99% compilation time: 14% of which was recompilation)
+335.000072 seconds (5.27 M allocations: 754.825 GiB, 3.30% gc time, 5.47% compilation time: 17% of which was recompilation)
+227.590339 seconds (6.88 M allocations: 849.229 GiB, 3.38% gc time, 2.08% compilation time: 60% of which was recompilation)
+562.760330 seconds (12.22 M allocations: 1.566 TiB, 3.33% gc time, 4.12% compilation time: 25% of which was recompilation)
 
 ============================= JOB FEEDBACK =============================
 
-NodeName=uc2n568
-Job ID: 3538640
+NodeName=uc2n682
+Job ID: 3244632
 Cluster: uc3
 User/Group: ka_rx8865/ka_scc
 State: COMPLETED (exit code 0)
 Nodes: 1
-Cores per node: 96
-CPU Utilized: 02:29:16
-CPU Efficiency: 9.33% of 1-02:40:00 core-walltime
-Job Wall-clock time: 00:16:40
-Memory Utilized: 130.60 GB
-Memory Efficiency: 35.57% of 367.19 GB (367.19 GB/node)
+Cores per node: 128
+CPU Utilized: 02:16:53
+CPU Efficiency: 10.57% of 21:34:56 core-walltime
+Job Wall-clock time: 00:10:07
+Memory Utilized: 62.63 GB
+Memory Efficiency: 25.05% of 250.00 GB (1.95 GB/core)

@@ -2,12 +2,9 @@
 #SBATCH --job-name=daxpy_scaling
 #SBATCH --nodes=1
 #SBATCH --exclusive
-#SBATCH --time=00:30:00
+#SBATCH --time=00:40:00
 #SBATCH --output=job_script.out
-#SBATCH --partition=gpu_a100_short
-#SBATCH --gres=gpu:1
-#SBATCH --qos=workshop
-#SBATCH --reservation=ws_julia
+#SBATCH --partition=cpu_il
 
 if [[ -n "${SLURM_JOB_ID}" ]]; then
     module load juliahpc
@@ -16,4 +13,4 @@ if [[ -n "${SLURM_JOB_ID}" ]]; then
 fi
 
 # run program
-julia --project -t 48 daxpy_cpu_scaling.jl
+julia --project -t 64 daxpy_cpu_scaling.jl
