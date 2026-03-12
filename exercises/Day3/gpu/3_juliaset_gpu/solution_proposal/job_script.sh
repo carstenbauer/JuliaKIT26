@@ -7,6 +7,8 @@
 #SBATCH --time=00:10:00
 #SBATCH --output=job_script.out
 #SBATCH --partition=gpu_a100_short
+##SBATCH --qos=workshop
+##SBATCH --reservation=ws_julia
 
 if [[ -n "${SLURM_JOB_ID}" ]]; then
     module load juliahpc
