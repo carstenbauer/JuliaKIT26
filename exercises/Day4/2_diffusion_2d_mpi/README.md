@@ -62,7 +62,7 @@ With this MPI setup in mind, let's move on to the exercise tasks and coding.
 
 1. Inspect the file `diffusion_2d_mpi.jl` and try to understand the general structure.
 2. Before changing anything, run the file using 4 MPI ranks (`mpiexecjl -n 4 julia --project diffusion_2d_mpi.jl`) and then visualize the (wrong) results (`julia --project visualize_mpi.jl`).
-    - You can also use `job_script.sh` for this. Either run it locally (`./job_script.sh`) or submit it as a job on the cluster (`qsub job_script.sh`).
+    - You can also use `job_script.sh` for this. Either run it locally (`./job_script.sh`) or submit it as a job on the cluster (`sbatch job_script.sh`).
 4. Implement the halo exchange in the function `update_halo!` by using non-blocking communication (`Irecv!`, `Isend`). See the `TODO` block in the file for more information.
 5. Run the code again, visualize the result again, and check that the code is correct (you should see very clearly if it's not correct 😉).
 
@@ -70,7 +70,7 @@ With this MPI setup in mind, let's move on to the exercise tasks and coding.
 
 Let's conduct a quick weak scaling benchmark in which we vary the number of MPI ranks and consider a higher resolution (i.e. a higher value of `ns`).
 
-1. The file `job_script_bench.sh` runs the desired benchmark (on a single machine). Execute it either locally via `./job_script_bench.sh` or submit it as a job on the cluster via `qsub job_script_bench.sh`.
+1. The file `job_script_bench.sh` runs the desired benchmark (on a single machine). Execute it either locally via `./job_script_bench.sh` or submit it as a job on the cluster via `sbatch job_script_bench.sh`.
 2. Inspect the results with the following questions in mind.
     - What trend do you observe?
     - What could be the reason for this trend (on a single machine)?
@@ -79,5 +79,5 @@ Let's conduct a quick weak scaling benchmark in which we vary the number of MPI 
 
 **Cluster only:** To avoid potential contentions, let us run the computation on multiple nodes with 1 MPI rank per socket, i.e. 2 MPI ranks per node.
 
-3. Submit `job_script_bench_multinode.sh` using `qsub`.
+3. Submit `job_script_bench_multinode.sh` using `sbatch`.
 4. Inspect the results in `job_script_bench_multinode.out` and compute the parallel efficiencies as above. What do you observe? Have they improved?
