@@ -5,7 +5,7 @@
 #SBATCH --time=00:30:00
 #SBATCH --output=job_script.out
 #SBATCH --partition=gpu_a100_short
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:4
 ##SBATCH --qos=workshop
 ##SBATCH --reservation=ws_julia
 
