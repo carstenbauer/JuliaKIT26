@@ -3,27 +3,27 @@ CuDevice(3), out of: 4
 CuDevice(2), out of: 4
 CuDevice(0), out of: 4
 nprocs = 4, dims = (2, 2)
-Time = 3.8897e-02 s, T_eff = 6.67 GB/s 
+Time = 3.8947e-02 s, T_eff = 6.66 GB/s 
 
 CuDevice(2), out of: 4
-CuDevice(3), out of: 4
 CuDevice(1), out of: 4
+CuDevice(3), out of: 4
 CuDevice(0), out of: 4
 nprocs = 4, dims = (2, 2)
-Time = 3.4483e+00 s, T_eff = 1233.08 GB/s 
+Time = 3.4420e+00 s, T_eff = 1235.32 GB/s 
 
 
 ============================= JOB FEEDBACK =============================
 
-NodeName=uc2n566
-Job ID: 3250008
+NodeName=uc2n564
+Job ID: 3555964
 Cluster: uc3
 User/Group: ka_rx8865/ka_scc
 State: COMPLETED (exit code 0)
 Nodes: 1
 Cores per node: 48
-CPU Utilized: 00:04:47
-CPU Efficiency: 3.30% of 02:24:48 core-walltime
-Job Wall-clock time: 00:03:01
-Memory Utilized: 17.87 GB
-Memory Efficiency: 17.87% of 100.00 GB (100.00 GB/node)
+CPU Utilized: 00:04:50
+CPU Efficiency: 2.78% of 02:53:36 core-walltime
+Job Wall-clock time: 00:03:37
+Memory Utilized: 19.96 GB
+Memory Efficiency: 5.44% of 367.19 GB (367.19 GB/node)

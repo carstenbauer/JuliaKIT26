@@ -3,7 +3,6 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
 #SBATCH --gres=gpu:4
-#SBATCH --mem=100G
 #SBATCH --time=00:10:00
 #SBATCH --output=job_script.out
 #SBATCH --partition=gpu_a100_short
