@@ -1,5 +1,7 @@
 # Exercises - Day 3
 
+**Note: Most likely, you don't have a NVIDIA GPU in your laptop. Hence, these exercises only work on the cluster.**
+
 ### `1_saxpy_gpu` <small>(do this one)</small>
 
 **Learnings:** using GPU array abstractions, writing a basic CUDA kernel, maximal memory bandwidth (GPU).
@@ -12,7 +14,7 @@ You'll try to measure the maximal, obtainable memory bandwidth of a GPU. To that
 
 We'll revisit the 2D diffusion example (see `diffusion_2d_multithreaded` above) and translate the multithreaded computation into a CUDA kernel. How much more efficient will the GPU variant be?
 
-### `3_juliaset_gpu` <small>(maybe skip)</small>
+### `3_juliaset_gpu` <small>(if you have time)</small>
 
 **Learnings:** CPU and GPU performance, a glimpse at hardware-agnostic coding
 

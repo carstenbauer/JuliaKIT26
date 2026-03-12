@@ -1,7 +1,5 @@
 # Exercise: SAXPY on NVIDIA GPU
 
-**Note: This exercise can be done on a cluster compute node with NVIDIA GPUs.**
-
 In this exercise, you will implement two GPU-variants of the **SAXPY** kernel (`y[i] = a * x[i] + y[i]`, `Float32` "single" precision):
 
 1) A version using array abstractions, i.e. `CuArrays` and simple broadcasting.

@@ -1,12 +1,10 @@
 # Exercise: Julia Set on NVIDIA GPU
 
-**Note: This exercise should be done on a cluster compute node with NVIDIA GPUs.**
-
 In this exercise, we will revisit the problem of computing an image of the Julia Set. This time we will compare a sequential CPU variant to a parallel GPU implementation (using a custom CUDA kernel).
 
 Remarkable side note: We will use the same `_compute_pixel` function both for the CPU and GPU variants!
 
-You can either work with a Julia script file (see the instructions below) or with a Jupyter notebook (see `juliaset_gpu.ipynb`).
+You can either work with a Julia script file (see the instructions below) or with a Jupyter notebook (see `juliaset_gpu.ipynb`) if you're working with VS Code directly on a compute node.
 
 ## Tasks
 
