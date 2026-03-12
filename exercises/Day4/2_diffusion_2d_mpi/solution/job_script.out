@@ -1,17 +1,17 @@
 nprocs = 4, dims = (2, 2)
-Time = 1.5778e-02 s, T_eff = 16.45 GB/s 
+Time = 2.4926e-02 s, T_eff = 10.41 GB/s 
 
 ============================= JOB FEEDBACK =============================
 
-NodeName=uc2n746
-Job ID: 3248733
+NodeName=uc2n561
+Job ID: 3551971
 Cluster: uc3
 User/Group: ka_rx8865/ka_scc
 State: COMPLETED (exit code 0)
 Nodes: 1
-Cores per node: 8
-CPU Utilized: 00:00:25
-CPU Efficiency: 6.38% of 00:06:32 core-walltime
-Job Wall-clock time: 00:00:49
-Memory Utilized: 1.55 GB
-Memory Efficiency: 38.63% of 4.00 GB (4.00 GB/node)
+Cores per node: 12
+CPU Utilized: 00:00:27
+CPU Efficiency: 1.57% of 00:28:36 core-walltime
+Job Wall-clock time: 00:02:23
+Memory Utilized: 2.48 GB
+Memory Efficiency: 62.02% of 4.00 GB (4.00 GB/node)

@@ -3,10 +3,12 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=40
 #SBATCH --threads-per-core=1
-#SBATCH --mem=80G
 #SBATCH --time=00:10:00
 #SBATCH --output=job_script_bench.out
-#SBATCH --partition=cpu_il
+#SBATCH --partition=gpu_a100_short
+#SBATCH --gres=gpu:4
+##SBATCH --qos=workshop
+##SBATCH --reservation=ws_julia
 #SBATCH --exclusive
 
 if [[ -n "${SLURM_JOB_ID}" ]]; then

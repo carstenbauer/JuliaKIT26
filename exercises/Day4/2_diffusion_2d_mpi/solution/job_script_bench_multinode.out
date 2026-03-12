@@ -1,51 +1,51 @@
 
 
 #### Run nranks=1
-[uc2n700.localdomain:3155329] Rank 0 bound to package[0][core:0-31]
+[uc2n566.localdomain:1066729] Rank 0 bound to package[0][core:0-23]
 nprocs = 1, dims = (1, 1)
-Time = 4.8177e+00 s, T_eff = 13.90 GB/s 
+Time = 6.0397e+00 s, T_eff = 11.09 GB/s 
 
 
 #### Run nranks=2
-[uc2n700.localdomain:3155363] Rank 0 bound to package[0][core:0-31]
-[uc2n700.localdomain:3155363] Rank 1 bound to package[1][core:32-63]
+[uc2n566.localdomain:1066805] Rank 0 bound to package[0][core:0-23]
+[uc2n566.localdomain:1066805] Rank 1 bound to package[1][core:24-47]
 nprocs = 2, dims = (2, 1)
-Time = 4.9723e+00 s, T_eff = 13.47 GB/s 
+Time = 6.1515e+00 s, T_eff = 10.88 GB/s 
 
 
 #### Run nranks=4
-[uc2n700.localdomain:3155418] Rank 0 bound to package[0][core:0-31]
-[uc2n700.localdomain:3155418] Rank 1 bound to package[1][core:32-63]
-[uc2n750.localdomain:1237223] Rank 2 bound to package[0][core:0-31]
-[uc2n750.localdomain:1237223] Rank 3 bound to package[1][core:32-63]
+[uc2n566.localdomain:1066871] Rank 0 bound to package[0][core:0-23]
+[uc2n566.localdomain:1066871] Rank 1 bound to package[1][core:24-47]
+[uc2n569.localdomain:3626046] Rank 2 bound to package[0][core:0-23]
+[uc2n569.localdomain:3626046] Rank 3 bound to package[1][core:24-47]
 nprocs = 4, dims = (2, 2)
-Time = 4.9856e+00 s, T_eff = 13.43 GB/s 
+Time = 6.2485e+00 s, T_eff = 10.72 GB/s 
 
 
 #### Run nranks=8
-[uc2n700.localdomain:3155466] Rank 0 bound to package[0][core:0-31]
-[uc2n700.localdomain:3155466] Rank 1 bound to package[1][core:32-63]
-[uc2n750.localdomain:1237290] Rank 2 bound to package[0][core:0-31]
-[uc2n750.localdomain:1237290] Rank 3 bound to package[1][core:32-63]
-[uc2n814.localdomain:2860982] Rank 6 bound to package[0][core:0-31]
-[uc2n814.localdomain:2860982] Rank 7 bound to package[1][core:32-63]
-[uc2n760.localdomain:1316927] Rank 4 bound to package[0][core:0-31]
-[uc2n760.localdomain:1316927] Rank 5 bound to package[1][core:32-63]
+[uc2n566.localdomain:1066930] Rank 0 bound to package[0][core:0-23]
+[uc2n566.localdomain:1066930] Rank 1 bound to package[1][core:24-47]
+[uc2n569.localdomain:3626139] Rank 2 bound to package[0][core:0-23]
+[uc2n569.localdomain:3626139] Rank 3 bound to package[1][core:24-47]
+[uc2n575.localdomain:3131968] Rank 4 bound to package[0][core:0-23]
+[uc2n578.localdomain:2885257] Rank 7 bound to package[1][core:24-47]
+[uc2n575.localdomain:3131968] Rank 5 bound to package[1][core:24-47]
+[uc2n578.localdomain:2885257] Rank 6 bound to package[0][core:0-23]
 nprocs = 8, dims = (4, 2)
-Time = 5.0158e+00 s, T_eff = 13.35 GB/s 
+Time = 6.2707e+00 s, T_eff = 10.68 GB/s 
 
 ============================= JOB FEEDBACK =============================
 
-NodeName=uc2n[700,750,760,814]
-Job ID: 3277385
+NodeName=uc2n[566,569,575,578]
+Job ID: 3553451
 Cluster: uc3
 User/Group: ka_rx8865/ka_scc
 State: COMPLETED (exit code 0)
 Nodes: 4
-Cores per node: 128
-CPU Utilized: 00:01:05
-CPU Efficiency: 0.12% of 15:04:32 core-walltime
-Job Wall-clock time: 00:01:46
-Memory Utilized: 3.07 GB
-Memory Efficiency: 0.96% of 320.00 GB (80.00 GB/node)
-The task which had the largest memory consumption differs by 116.75% from the average task max memory consumption
+Cores per node: 96
+CPU Utilized: 00:01:20
+CPU Efficiency: 0.14% of 15:34:24 core-walltime
+Job Wall-clock time: 00:02:26
+Memory Utilized: 2.38 GB
+Memory Efficiency: 0.16% of 1.43 TB (367.19 GB/node)
+The task which had the largest memory consumption differs by 100.24% from the average task max memory consumption

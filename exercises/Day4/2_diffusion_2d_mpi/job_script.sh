@@ -1,25 +1,20 @@
 #!/bin/bash
-#PBS -N diff2dmpi
-#PBS -l select=1:node_type=skl:ncpus=4:mpiprocs=4
-#PBS -l walltime=00:10:00
-#PBS -j oe
-#PBS -o job_script.out
-#PBS -q smp
+#SBATCH --job-name=diff2dmpi
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --mem=4G
+#SBATCH --time=00:10:00
+#SBATCH --output=job_script.out
+#SBATCH --partition=gpu_a100_short
+#SBATCH --gres=gpu:1
+##SBATCH --qos=workshop
+##SBATCH --reservation=ws_julia
 
-WORKDIR=$(pwd)
-if [[ -n "${PBS_O_WORKDIR}" ]]; then
-    # we're running as a cluster job
-    # change to the directory that the job was submitted from ...
-    WORKDIR=$PBS_O_WORKDIR
-    # ... and load the module(s)
-    ml juliahpc
-    ml mpi/openmpi
+if [[ -n "${SLURM_JOB_ID}" ]]; then
+    module load juliahpc
+    export JULIAKIT26_DEPOT_PATH="/pfs/work9/workspace/scratch/ka_rx8865-juliakit26/.juliakit26"
+    export JULIA_DEPOT_PATH="$TMPDIR/.julia_$USER:$JULIAKIT26_DEPOT_PATH"
 fi
-cd $WORKDIR
-
-# OpenMPI settings
-export OMPI_MCA_mpi_cuda_support=0
-export OMPI_MCA_mca_component_show_load_errors=0
 
 # run MPI code
 mpiexecjl -n 4 julia --project diffusion_2d_mpi.jl
