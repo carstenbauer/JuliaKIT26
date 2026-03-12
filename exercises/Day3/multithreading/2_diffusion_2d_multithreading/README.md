@@ -117,7 +117,7 @@ Next, we want to see how much faster our solver is when using multiple threads. 
 
 * Take a look at the file `job_script.sh` and then run it.
   * You can run it locally (on the system you're working on, like your laptop) via `./job_script.sh` or `sh job_script.sh`.
-  * Alternatively, you can run it on the compute cluster by submitting it as a job with `qsub job_script.sh`.
+  * Alternatively, you can run it on the compute cluster by submitting it as a job with `sbatch job_script.sh`.
 * Inspect the results with the following questions in mind
   * Is the multithreaded version faster? If so, by how much? (Take ratios of walltime or `T_eff`.)
   * How does the speedup change with increasing ns? Does it make sense to you?

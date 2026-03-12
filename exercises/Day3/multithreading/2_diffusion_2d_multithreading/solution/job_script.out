@@ -2,50 +2,50 @@
 
 #### Run ns=256
 -- single threaded
-Time = 8.1198e-02 s, T_eff = 21.02 GB/s 
+Time = 1.2561e-01 s, T_eff = 13.59 GB/s 
 
 -- multithreaded (10 threads), dynamic scheduling
-Time = 4.5379e-02 s, T_eff = 37.62 GB/s 
+Time = 7.2299e-02 s, T_eff = 23.61 GB/s 
 
 -- multithreaded (10 threads), static scheduling
-Time = 4.6977e-02 s, T_eff = 36.34 GB/s 
+Time = 7.9738e-02 s, T_eff = 21.41 GB/s 
 
 
 
 #### Run ns=512
 -- single threaded
-Time = 1.3348e+00 s, T_eff = 20.56 GB/s 
+Time = 1.9563e+00 s, T_eff = 14.03 GB/s 
 
 -- multithreaded (10 threads), dynamic scheduling
-Time = 7.6779e-01 s, T_eff = 35.74 GB/s 
+Time = 7.3401e-01 s, T_eff = 37.39 GB/s 
 
 -- multithreaded (10 threads), static scheduling
-Time = 4.5820e-01 s, T_eff = 59.89 GB/s 
+Time = 7.4113e-01 s, T_eff = 37.03 GB/s 
 
 
 
 #### Run ns=1028
 -- single threaded
-Time = 2.2068e+01 s, T_eff = 20.23 GB/s 
+Time = 3.5708e+01 s, T_eff = 12.51 GB/s 
 
 -- multithreaded (10 threads), dynamic scheduling
-Time = 5.7346e+00 s, T_eff = 77.87 GB/s 
+Time = 9.5771e+00 s, T_eff = 46.63 GB/s 
 
 -- multithreaded (10 threads), static scheduling
-Time = 5.6508e+00 s, T_eff = 79.02 GB/s 
+Time = 9.8930e+00 s, T_eff = 45.14 GB/s 
 
 
 ============================= JOB FEEDBACK =============================
 
-NodeName=uc2n786
-Job ID: 3244662
+NodeName=uc2n567
+Job ID: 3538916
 Cluster: uc3
 User/Group: ka_rx8865/ka_scc
 State: COMPLETED (exit code 0)
 Nodes: 1
 Cores per node: 20
-CPU Utilized: 00:16:38
-CPU Efficiency: 17.70% of 01:34:00 core-walltime
-Job Wall-clock time: 00:04:42
-Memory Utilized: 2.73 GB
-Memory Efficiency: 54.62% of 5.00 GB (5.00 GB/node)
+CPU Utilized: 00:04:27
+CPU Efficiency: 8.84% of 00:50:20 core-walltime
+Job Wall-clock time: 00:02:31
+Memory Utilized: 517.62 MB
+Memory Efficiency: 10.11% of 5.00 GB (5.00 GB/node)
