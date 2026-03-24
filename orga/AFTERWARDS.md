@@ -84,6 +84,7 @@ After running `. ~/.bashrc` or logging out and back in again you should be able 
 
 # The `julia_wrapper.sh` is gone, what should I do?
 
+If you've chosen Option 1 above, there is nothing todo as `julia` is now always available on the cluster (for you). If you chose Option 2:
 ```
 curl -fL -o $HOME/.local/bin/julia_wrapper.sh https://raw.githubusercontent.com/carstenbauer/JuliaKIT26/refs/heads/main/orga/julia_wrapper.sh && chmod +x $HOME/.local/bin/julia_wrapper.sh
 ```
