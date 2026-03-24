@@ -17,7 +17,7 @@ sed -i '$d' $HOME/.bashrc
 
 ```
 curl -L -o vscode_cli.tar.gz "https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64"
-mkdir -p "$HOME/.local/bin2" && tar -xzf vscode_cli.tar.gz -C "$HOME/.local/bin2"
+mkdir -p "$HOME/.local/bin" && tar -xzf vscode_cli.tar.gz -C "$HOME/.local/bin"
 rm vscode_cli.tar.gz
 ```
 
