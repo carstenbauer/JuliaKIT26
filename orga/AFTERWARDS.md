@@ -1,6 +1,15 @@
+# What you should definitely do
+
+Remove the line from `$HOME/.bashrc` that has been added during the preparation for the course. Assuming it is still the last line in this file (which it should be) you can simply run
+```
+sed -i '$d' $HOME/.bashrc
+```
+
 # The modules are gone, what should I do?
 
 ### `module load code` (VSCode CLI)
+
+(Only required for VS Code tunneling - not SSH)
 
 ```
 curl -L -o vscode_cli.tar.gz "https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64"
@@ -20,7 +29,7 @@ Install Julia via juliaup on the cluster with
 curl -fsSL https://install.julialang.org | sh
 ```
 
-Load CUDA and MPI with the following commands, if you need them.
+Load CUDA and MPI with the following commands, whenever you need them.
 
 ```
 module load devel/cuda/12.8
