@@ -25,7 +25,7 @@ This downloads the `code` command line interface to `$HOME/.local/bin` which sho
 
 ### `module load juliahpc` (Julia + CUDA + MPI)
 
-#### Option 1
+#### Option 1 (recommended)
 
 Install Julia via juliaup on the cluster with
 
