@@ -1,6 +1,10 @@
 # What you should definitely do
 
-Remove the line from `$HOME/.bashrc` that has been added during the preparation for the course. Assuming it is still the last line in this file (which it should be) you can simply run
+Remove the line
+```
+source /pfs/work9/workspace/scratch/ka_rx8865-juliakit26/bashrc.sh
+```
+from `$HOME/.bashrc`. Assuming it is still the last line in this file (which it should be) you can simply run
 ```
 sed -i '$d' $HOME/.bashrc
 ```
