@@ -68,3 +68,10 @@ echo 'export MODULEPATH=$HOME/.local/modules:$MODULEPATH' >> $HOME/.bashrc
 This creates the module file that we've used during the workshop in `$HOME/.local/modules/juliahpc` and puts this directory structure on `$MODULEPATH`.
 
 After running `. ~/.bashrc` or logging out and back in again you should be able to do `module load juliahpc` just as during the workshop.
+
+# The `julia_wrapper.sh` is gone, what should I do?
+
+```
+curl -fL -o $HOME/.local/bin/julia_wrapper.sh https://raw.githubusercontent.com/carstenbauer/JuliaKIT26/refs/heads/main/orga/julia_wrapper.sh && chmod +x $HOME/.local/bin/julia_wrapper.sh
+```
+Point the Julia VS Code extension (the "executable" setting) to `<YOURHOME>/.local/bin/julia_wrapper.sh` where you replace `<YOURHOME>` by what `echo $HOME` gives you.
